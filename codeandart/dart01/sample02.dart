@@ -54,5 +54,10 @@ void main() {
   }
   print(hello2('Alex', 'Hey'));
   print(hello2('Alex', 'Hey', 'iPhone 10'));
-  
+
+  void createListAndMap({List<int> list = const [1, 2, 3], Map<String, String> games = const {'first': 'Gothic 2', 'third': 'Witcher 3'}}) {
+    print('Default list: $list');
+    print('Default dictionary: $games');
+  }
+  createListAndMap();
 }
