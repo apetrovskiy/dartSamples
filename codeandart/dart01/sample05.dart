@@ -1,5 +1,6 @@
+// Collections
 void main() {
-  // Collections
+  // List (arrays)
   var list = [1,2,3];
 
   List<int> values = [1,2,3,4,5,6,7,8];
