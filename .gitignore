@@ -268,3 +268,4 @@ project/metals.sbt
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
 symbolCache.db
+branches.txt

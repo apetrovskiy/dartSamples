@@ -11,5 +11,9 @@ void main() {
   games.addAll({'Langrisser', 'Gothic2', 'Gothic2'});
   print(games);
 
+  final constantGames = const {'Witcher 3', 'Gwint', 'DMC', 'FF', 'LostArk'};
+  // constantGames.add('TES');
+
+  // spread, spread-nullable, if and for
   
 }
