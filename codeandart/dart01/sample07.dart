@@ -25,4 +25,15 @@ void main() {
   };
 
   // spread, spread-nullable, if and for
+  print({'someKey': 'someValue', ...constMap});
+  print({'someKey': 'someValue', ...?constMap});
+  var emptyMap = Map();
+  print({'someKey': 'someValue', ...emptyMap});
+  print({'someKey': 'someValue', ...?emptyMap});
+  var nullableMap;
+  // print({'someKey': 'someValue', ...nullableMap});
+  print({'someKey': 'someValue', ...?nullableMap});
+
+  print({{'someKey': 'someValue'}, for(var entry in constMap.entries) {entry.key: entry.value}});
+  print({{'someKey': 'someValue'}, for(var entry in constMap.entries) if (entry.value.contains('2')) {entry.key: entry.value}});
 }
