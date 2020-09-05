@@ -17,7 +17,7 @@ void main() {
 
   print(int.parse('1') == 1);
   print(12.22 == double.parse('12.22'));
-  
+
   print(1.toString());
   print(3.14159.toStringAsFixed(2));
 }

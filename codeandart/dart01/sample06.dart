@@ -24,6 +24,10 @@ void main() {
   // print({'noname', ...nullableGames});
   print({'noname', ...?nullableGames});
 
-  print({'noname', for(var element in constantGames) element});
-  print({'noname', for(var element in constantGames) if (element.toString().startsWith('D'))element});
+  print({'noname', for (var element in constantGames) element});
+  print({
+    'noname',
+    for (var element in constantGames)
+      if (element.toString().startsWith('D')) element
+  });
 }
