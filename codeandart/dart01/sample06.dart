@@ -15,5 +15,15 @@ void main() {
   // constantGames.add('TES');
 
   // spread, spread-nullable, if and for
-  
+  print({'noname', ...constantGames});
+  print({'noname', ...?constantGames});
+  var emptyGames = <String>{};
+  print({'noname', ...emptyGames});
+  print({'noname', ...?emptyGames});
+  var nullableGames;
+  // print({'noname', ...nullableGames});
+  print({'noname', ...?nullableGames});
+
+  print({'noname', for(var element in constantGames) element});
+  print({'noname', for(var element in constantGames) if (element.toString().startsWith('D'))element});
 }
