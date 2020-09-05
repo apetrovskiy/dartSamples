@@ -58,7 +58,6 @@ void main() {
   ..text = 'Confirm' // Use its members
   ..classes.add('important')
   ..onClick.listen((e) => window.alert('Confirmed!'));
-  
 }
 
 double getDoubleValue() {
