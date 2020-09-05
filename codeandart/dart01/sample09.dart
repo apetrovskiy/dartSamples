@@ -21,7 +21,7 @@ void main() {
 
   // late init in properties of classes that
 
-  final a = [1,2,3];
+  final a = [1, 2, 3];
   a.add(4);
   print(a);
 
@@ -55,9 +55,9 @@ void main() {
 
   // cascade operator
   querySelector('#confirm') // Get an object.
-  ..text = 'Confirm' // Use its members
-  ..classes.add('important')
-  ..onClick.listen((e) => window.alert('Confirmed!'));
+    ..text = 'Confirm' // Use its members
+    ..classes.add('important')
+    ..onClick.listen((e) => window.alert('Confirmed!'));
 }
 
 double getDoubleValue() {

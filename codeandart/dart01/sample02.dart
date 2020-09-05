@@ -5,7 +5,7 @@ void main() {
 
   printValue(123);
 
-  var list = [1, 2 , 3];
+  var list = [1, 2, 3];
   list.forEach(printValue);
 
   list.forEach((value) {
@@ -21,6 +21,7 @@ void main() {
   String getModel({String title, int value}) {
     return '$title - ${value + 10}';
   }
+
   print(getModel(title: 'Model', value: 22));
 
   // Positioned paremeters
@@ -52,12 +53,19 @@ void main() {
     }
     return result;
   }
+
   print(hello2('Alex', 'Hey'));
   print(hello2('Alex', 'Hey', 'iPhone 10'));
 
-  void createListAndMap({List<int> list = const [1, 2, 3], Map<String, String> games = const {'first': 'Gothic 2', 'third': 'Witcher 3'}}) {
+  void createListAndMap(
+      {List<int> list = const [1, 2, 3],
+      Map<String, String> games = const {
+        'first': 'Gothic 2',
+        'third': 'Witcher 3'
+      }}) {
     print('Default list: $list');
     print('Default dictionary: $games');
   }
+
   createListAndMap();
 }

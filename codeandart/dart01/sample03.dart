@@ -7,5 +7,6 @@ void main() {
     print(insideMain);
     print(insideMyFunction);
   }
+
   MyFunction();
 }

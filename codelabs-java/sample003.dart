@@ -6,7 +6,8 @@ class Rectangle {
   int height;
   Point origin;
   @override
-  String toString() => 'Origin: (${origin.x}, ${origin.y}), width: $width, height: $height';
+  String toString() =>
+      'Origin: (${origin.x}, ${origin.y}), width: $width, height: $height';
 }
 
 main() {

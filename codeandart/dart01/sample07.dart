@@ -1,10 +1,6 @@
 // Dictionaries - Map
 void main() {
-  Map<String, String> values = {
-    'k1': 'value1',
-    'k2': 'value2',
-    'k3': 'value3'
-  };
+  Map<String, String> values = {'k1': 'value1', 'k2': 'value2', 'k3': 'value3'};
 
   var films = Map();
   films['first'] = 'LOTR';
@@ -18,11 +14,7 @@ void main() {
 
   print(values.length);
 
-  final constMap = const {
-    'k1': 'value1',
-    'k2': 'value2',
-    'k3': 'value3'
-  };
+  final constMap = const {'k1': 'value1', 'k2': 'value2', 'k3': 'value3'};
 
   // spread, spread-nullable, if and for
   print({'someKey': 'someValue', ...constMap});
@@ -34,6 +26,13 @@ void main() {
   // print({'someKey': 'someValue', ...nullableMap});
   print({'someKey': 'someValue', ...?nullableMap});
 
-  print({{'someKey': 'someValue'}, for(var entry in constMap.entries) {entry.key: entry.value}});
-  print({{'someKey': 'someValue'}, for(var entry in constMap.entries) if (entry.value.contains('2')) {entry.key: entry.value}});
+  print({
+    {'someKey': 'someValue'},
+    for (var entry in constMap.entries) {entry.key: entry.value}
+  });
+  print({
+    {'someKey': 'someValue'},
+    for (var entry in constMap.entries)
+      if (entry.value.contains('2')) {entry.key: entry.value}
+  });
 }
