@@ -31,4 +31,7 @@ void main() {
   }
 
   callbacks.forEach((value) => value());
+
+  // while
+  // switch (is not recommended)
 }
