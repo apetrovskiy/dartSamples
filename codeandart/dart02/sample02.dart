@@ -4,7 +4,11 @@ class Paladin {
   num attack;
   num defense;
 
-  Paladin({this.level, this.attack, this.defense});
+  Paladin({this.level, this.attack = 5, this.defense = 7});
+  Paladin.darker({this.level}) {
+    this.attack = 17;
+    this.defense = 3;
+  }
 
   @override
   String toString() =>
@@ -12,11 +16,8 @@ class Paladin {
 }
 
 void main() {
-  Paladin newHero = Paladin(
-    level: 1,
-    attack: 5,
-    defense: 7);
-  newHero.level = 1;
-  print(newHero.level);
+  Paladin newHero = Paladin(level: 5);
+  Paladin darkHero = Paladin.darker(level: 1);
   print(newHero);
+  print(darkHero);
 }
