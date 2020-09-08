@@ -16,7 +16,7 @@ class Paladin {
 }
 
 void main() {
-  Paladin newHero = Paladin(1, 5 ,7);
+  Paladin newHero = Paladin(1, 5, 7);
   newHero.level = 1;
   print(newHero.level);
   print(newHero);

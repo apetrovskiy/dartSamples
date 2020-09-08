@@ -29,8 +29,8 @@ class LightWarrior extends Paladin {
   @override
   String toString() {
     return lightPower != null
-      ? '${super.toString()} -> LightPower: lightPower=[$lightPower]'
-      : super.toString();
+        ? '${super.toString()} -> LightPower: lightPower=[$lightPower]'
+        : super.toString();
   }
 }
 

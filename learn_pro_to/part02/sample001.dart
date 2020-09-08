@@ -11,4 +11,6 @@ void main() {
   vehicle.manufacturer = 'BMW';
   vehicle.fuelCapacity = 60;
   vehicle.fuelRemaining = 30;
+  print(
+      '${vehicle.manufacturer}, ${vehicle.fuelCapacity}, ${vehicle.fuelRemaining}');
 }
